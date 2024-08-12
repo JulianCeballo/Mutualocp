@@ -1,0 +1,28 @@
+/* estilos de html grid*/
+@import "../utilidades/variables";
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150pcpx, 1fr)); 
+    grid-template-rows: auto;
+    gap: 10px; 
+    place-items: center; 
+}
+
+.grid-container .item-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.grid-container .item-grid img {
+    max-width: 100%;
+    height: auto;
+}
+
+.tecnologias{ color: $color-secundario;
+    margin-left: 30px; 
+        
+  
+}

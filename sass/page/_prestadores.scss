@@ -1,0 +1,31 @@
+/* estilos de html con grid prestadores*/
+
+@import "../utilidades/variables";
+
+
+.grid-container {
+    width: 1100PX;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    grid-template-rows: auto;
+    gap: 5px; 
+    place-items: center;
+}
+
+.grid-container .item-grid {
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+    padding: 10px;
+}
+
+.grid-container .item-grid img {
+    max-width: 100%;
+    height: auto;
+}
+
+.hospitales { color: $color-secundario;
+    text-align: justify;
+
+
+}

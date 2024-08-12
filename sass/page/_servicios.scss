@@ -1,0 +1,25 @@
+
+/* estilos html */
+
+@import "../utilidades/variables";
+
+.content {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    text-align: left; 
+
+    
+
+}
+
+.senora {
+    margin-right: 15px; 
+    
+
+}
+
+.textoservicio {
+    max-width: 700px;
+    color: $color-secundario;
+}

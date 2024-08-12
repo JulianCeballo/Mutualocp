@@ -1,0 +1,243 @@
+/* comentario en scss y css*/
+/* parcial , estilos de html */
+.institucional-img {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 5px;
+  width: 100%;
+}
+
+main {
+  background-color: #F3F3FC;
+}
+
+/* estilos html */
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
+
+.senora {
+  margin-right: 15px;
+}
+
+.textoservicio {
+  max-width: 700px;
+  color: #e4007c;
+}
+
+/* Estilos de html */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 20px;
+}
+
+.textodeturnos {
+  color: #e4007c;
+  margin: auto;
+}
+
+.textodeturnos:hover {
+  background-color: #1c0d02;
+}
+
+.tur {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
+/* estilos de html grid*/
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150pcpx, 1fr));
+  grid-template-rows: auto;
+  gap: 10px;
+  place-items: center;
+}
+
+.grid-container .item-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.grid-container .item-grid img {
+  max-width: 100%;
+  height: auto;
+}
+
+.tecnologias {
+  color: #e4007c;
+  margin-left: 30px;
+}
+
+/* estilos de html con grid prestadores*/
+.grid-container {
+  width: 1100PX;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-rows: auto;
+  gap: 5px;
+  place-items: center;
+}
+
+.grid-container .item-grid {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 10px;
+}
+
+.grid-container .item-grid img {
+  max-width: 100%;
+  height: auto;
+}
+
+.hospitales {
+  color: #e4007c;
+  text-align: justify;
+}
+
+/* estilos footer*/
+footer {
+  color: #e4007c;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: #F3F3FC;
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+footer a {
+  display: block;
+  margin-right: 1px;
+}
+footer a .whata {
+  width: 60px;
+  height: auto;
+}
+footer a .instagram {
+  width: 60px;
+  height: auto;
+  position: absolute;
+  top: -60%;
+  left: 10px;
+}
+footer p {
+  margin: 0;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  color: #e4007c;
+  background-color: #F3F3FC;
+}
+
+.mutual-info {
+  width: 100%;
+  color: #F3F3FC;
+  background-color: #e4007c;
+  font-size: 15px;
+  text-align: right;
+  padding: 2px;
+}
+
+/*isologotipo*/
+.logotipo1 {
+  width: 100px;
+  height: auto;
+  position: absolute;
+  top: -15px;
+  left: -20px;
+}
+
+header {
+  background-color: #F3F3FC;
+  width: 100%;
+  text-align: center;
+}
+header nav {
+  display: flex;
+  justify-content: center;
+}
+header nav ul {
+  display: flex;
+  list-style: none;
+  padding: 5px;
+  margin: 0px;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+}
+header nav ul li {
+  margin-right: 20px;
+  list-style-type: none;
+  text-decoration: none;
+  color: #e4007c;
+}
+header nav ul li a {
+  text-decoration: none;
+}
+header nav ul li a .nav-item {
+  color: #e4007c;
+}
+header .carousel-img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+}
+
+main {
+  color: #F3F3FC;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+main section {
+  justify-content: margin-bottom 20px;
+}
+main section img {
+  max-width: 90%;
+  height: auto;
+}
+
+/* Media query - Mobile */
+@media only screen and (max-width: 500px) {
+  header {
+    flex-direction: column;
+  }
+  header nav {
+    width: 100%;
+  }
+  header nav ul {
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10px;
+  }
+  header nav ul a {
+    font-size: 1.5rem;
+  }
+}
+/*Media query - Desktop*/
+@media only screen and (min-width: 961px) {
+  body {
+    background-color: #F3F3FC;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

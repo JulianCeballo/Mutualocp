@@ -1,0 +1,35 @@
+/* Estilos de html */
+
+
+@import "../utilidades/variables";
+
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;  
+    padding-top: 20px;         
+}
+            
+
+
+.textodeturnos {
+    color:$color-secundario;
+     margin: auto;
+    
+}
+
+.textodeturnos:hover  {
+    background-color:$color-terciario;
+}        
+
+.tur {
+  
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    margin-right: 10px;
+
+}
+
+

@@ -1,0 +1,166 @@
+//comentario en sass
+
+/* comentario en scss y css*/
+
+
+//impor 
+
+@import "page/institucional";
+@import "page/servicios";
+@import"page/turnos";
+@import"page/novedades";
+@import"page/prestadores";
+@import"utilidades/footer";
+@import"utilidades/variables";
+@import"utilidades/mixin";
+
+
+body { 
+    font-family: "Nunito", sans-serif;
+    color:$color-secundario;
+    background-color: $color-primario;
+      
+   }
+
+
+.mutual-info { width: 100%;
+    color: $color-primario;
+    background-color:$color-secundario;
+    font-size: 15px;
+    text-align: right;
+    padding: 2px;
+  }
+ 
+  
+  /*isologotipo*/
+.logotipo1 {
+    @include medidas ( 100px,auto);
+    position: absolute;
+    top: -15px; 
+    left: -20px; 
+
+     }
+       
+
+   
+//nesting
+
+header {
+    background-color:$color-primario;
+    width: 100%;
+    text-align: center;
+       
+
+
+    nav {
+        display: flex;
+        justify-content: center;
+                    
+       
+
+        ul {   
+            
+            display: flex;
+            list-style: none;
+            padding: 5px;
+            margin: 0px;
+            justify-content: center;
+            flex-wrap: wrap;
+            list-style: none;
+            li {
+                margin-right: 20px;
+                list-style-type: none;
+                text-decoration: none;
+                color: $color-secundario;
+                
+
+                a   {
+                    text-decoration: none;
+                    .nav-item { color:$color-secundario;
+                    }                
+                                                       
+                     }
+                    
+          
+                 }
+           
+                 }
+                 }
+    .carousel-img {
+        
+        @include medidas ( 100%,170px );
+        object-fit: cover; 
+        
+                          
+                    
+                }
+                             
+                }
+                
+                             
+                main {
+                    color:$color-primario;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+
+                    section {
+                        justify-content: margin-bottom 20px;
+                        img {
+                          
+                            max-width: 90%;
+                            height: auto;
+                         
+                            
+                        }
+                    }
+                }   
+                
+               
+
+/* Media query - Mobile */
+
+@media only screen and (max-width: 500px) {
+    
+
+    header{
+        flex-direction: column;
+        nav{
+            width: 100%;
+            ul{
+                flex-direction: column;
+                align-items: center;
+                margin: 0 10px;
+                a{
+                    font-size: 1.5rem;
+                    
+                }
+            }
+        }
+        
+    }
+        
+    
+}
+
+
+
+ /*Media query - Desktop*/
+ @media only screen and ( min-width: 961px) {
+   
+    body {
+        background-color:#F3F3FC ;}
+     
+       
+     }
+
+        
+                    
+     
+           
+
+    
+
+

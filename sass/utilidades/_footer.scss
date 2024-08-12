@@ -1,0 +1,45 @@
+/* estilos footer*/
+
+@import "../utilidades/mixin";
+
+footer {
+    color: $color-secundario;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: $color-primario; 
+    padding: 10px; 
+    width: 100%; 
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.1); 
+        a {
+            display: block; 
+            margin-right: 1px; 
+               .whata {
+                     @include medidas ( 60px, auto);
+
+                
+               }
+               .instagram {
+                    @include medidas( 60px, auto);
+                     position: absolute;
+                     top: -60%;
+                     left: 10px; 
+                     
+                        }
+                         
+        }
+        p {
+            margin: 0; 
+        }
+      
+        }
+        
+
+
+    
+
+    
+
