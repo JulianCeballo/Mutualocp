@@ -29,6 +29,7 @@ main {
 .textoservicio {
   max-width: 700px;
   color: #e4007c;
+  margin-right: 10px;
 }
 
 /* Estilos de html */
@@ -42,6 +43,8 @@ main {
 .textodeturnos {
   color: #e4007c;
   margin: auto;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .textodeturnos:hover {
@@ -52,13 +55,13 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 10px;
+  margin-left: 30px;
 }
 
 /* estilos de html grid*/
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150pcpx, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200pcpx, 1fr));
   grid-template-rows: auto;
   gap: 10px;
   place-items: center;
@@ -74,11 +77,6 @@ main {
 .grid-container .item-grid img {
   max-width: 100%;
   height: auto;
-}
-
-.tecnologias {
-  color: #e4007c;
-  margin-left: 30px;
 }
 
 /* estilos de html con grid prestadores*/
@@ -191,9 +189,7 @@ header nav ul li {
 }
 header nav ul li a {
   text-decoration: none;
-}
-header nav ul li a .nav-item {
-  color: #e4007c;
+  /* Estilo para cambiar el color de la tipografía del navbar */
 }
 header .carousel-img {
   width: 100%;
@@ -219,14 +215,24 @@ main section img {
 
 /* Estilo para cambiar el color de la tipografía del navbar */
 .navbar-nav .nav-link {
-  color: #e4007c; /* Reemplaza #ff5733 con el color que desees */
+  color: #e4007c;
 }
 
-/* Cambia el color cuando el enlace está activo o se pasa el mouse */
+/* Cambia el color  */
 .navbar-nav .nav-link:hover,
 .navbar-nav .nav-link:focus,
 .navbar-nav .nav-link.active {
-  color: #1c0d02; /* Reemplaza #ff4500 con otro color si deseas */
+  color: #1c0d02;
+}
+
+/* Cambiar el color del enlace "Inicio" */
+.navbar-brand {
+  color: #e4007c !important; /* Reemplaza #ff5733 con el color que desees */
+}
+
+/* Cambiar el color al pasar el mouse por "Inicio" */
+.navbar-brand:hover {
+  color: #1c0d02 !important; /* Reemplaza #ff4500 con otro color si deseas */
 }
 
 /* Media query - Mobile */

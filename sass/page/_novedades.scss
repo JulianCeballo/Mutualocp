@@ -3,7 +3,7 @@
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150pcpx, 1fr)); 
+    grid-template-columns: repeat(auto-fit, minmax(200pcpx, 1fr)); 
     grid-template-rows: auto;
     gap: 10px; 
     place-items: center; 
@@ -21,8 +21,3 @@
     height: auto;
 }
 
-.tecnologias{ color: $color-secundario;
-    margin-left: 30px; 
-        
-  
-}

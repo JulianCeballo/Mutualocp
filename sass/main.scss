@@ -76,10 +76,8 @@ header {
 
                 a   {
                     text-decoration: none;
-                    .nav-item { color:$color-secundario;
-                      
-                    }                
-                                                       
+                        /* Estilo para cambiar el color de la tipografía del navbar */
+                                                                             
                      }
                     
           
@@ -122,16 +120,25 @@ header {
 
 /* Estilo para cambiar el color de la tipografía del navbar */
 .navbar-nav .nav-link {
-    color: $color-secundario; /* Reemplaza #ff5733 con el color que desees */
+    color: $color-secundario; 
 }
 
-/* Cambia el color cuando el enlace está activo o se pasa el mouse */
+/* Cambia el color  */
 .navbar-nav .nav-link:hover,
 .navbar-nav .nav-link:focus,
 .navbar-nav .nav-link.active {
-    color: $color-terciario; /* Reemplaza #ff4500 con otro color si deseas */
+    color: $color-terciario; 
 }
 
+/* Cambiar el color del enlace "Inicio" */
+.navbar-brand {
+    color: $color-secundario !important; /* Reemplaza #ff5733 con el color que desees */
+}
+
+/* Cambiar el color al pasar el mouse por "Inicio" */
+.navbar-brand:hover {
+    color: $color-terciario!important; /* Reemplaza #ff4500 con otro color si deseas */
+}
 
 
 
