@@ -1,23 +1,28 @@
 /* estilos de html grid*/
 @import "../utilidades/variables";
 
-.grid-container {
+
+.grid-containerdos {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200pcpx, 1fr)); 
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
     grid-template-rows: auto;
-    gap: 10px; 
-    place-items: center; 
+    gap: 0px; 
+   
+
 }
 
-.grid-container .item-grid {
+
+.grid-containerdos .item-g {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px;
-}
-
-.grid-container .item-grid img {
+    padding: 5px;
     max-width: 100%;
     height: auto;
+}
+
+.grid-containerdos img {
+    width: 100%; 
+    height: auto; 
 }
 

@@ -59,23 +59,24 @@ main {
 }
 
 /* estilos de html grid*/
-.grid-container {
+.grid-containerdos {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200pcpx, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-template-rows: auto;
-  gap: 10px;
-  place-items: center;
+  gap: 0px;
 }
 
-.grid-container .item-grid {
+.grid-containerdos .item-g {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px;
+  padding: 5px;
+  max-width: 100%;
+  height: auto;
 }
 
-.grid-container .item-grid img {
-  max-width: 100%;
+.grid-containerdos img {
+  width: 100%;
   height: auto;
 }
 
