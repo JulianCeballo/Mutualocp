@@ -100,6 +100,7 @@ header {
                     justify-content: center;
                     width: 100%;
 
+
                     section {
                         justify-content: margin-bottom 20px;
                         img {
@@ -158,9 +159,17 @@ header {
         }
         
     }
-     
-       
+            
     main { 
+        .tarjeta {
+            flex: auto;
+            justify-content: flex-start;
+            height: auto;
+            padding-right: 15px;
+            padding-left:5px;
+        }
+
+     
         .grid-container {
 
             margin-bottom: 120px; 
@@ -171,11 +180,6 @@ header {
             margin-bottom: 100px; 
              }
 
-            .content {
-            margin-bottom: 40px;
-            margin-top: 10px;
-
-            }
 
             .senora {
              margin-top: -360px;
@@ -187,24 +191,21 @@ header {
                 margin-top: 5px;
                 margin-bottom: 45px;
             }
+           
 
+            
+            
         }
     }
   
-
-
-
-
-
-
+    
 
  /*Media query - Desktop*/
  @media only screen and ( min-width: 961px) {
    
     body {
         background-color:#F3F3FC ;}
-     
-       
+            
      }
 
         

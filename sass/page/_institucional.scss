@@ -1,18 +1,43 @@
 /* parcial , estilos de html */
 
+@import "../utilidades/variables";
    
 .institucional-img {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content:space-around;
+    justify-content: space-between;
     padding: 5px;
     width: 100%;
-     
+    margin-bottom: 50px;
+  }
+  
+  main {
+    .tarjeta {
+      flex: 1;
+      padding: 10px;
+      margin: 10px;
+      background-color: $color-secundario;
+      color: $color-primario;
+      border-radius: 8px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start; 
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      height: auto;
+      min-height: 200px;
+  
+    .tarjeta p:first-child {
+      margin: 0;
+      font-weight: bold;
+      font-size: 1.2rem;
+      text-align: left;
+      margin-bottom: 10px; 
+    }
+  
+    .tarjeta p:not(:first-child) {
+      margin: 0;
+      color: $color-secundario;
+      text-align: left;
+    }
+  }
 }
-
-main { background-color:#F3F3FC;
-    
-}
-
-

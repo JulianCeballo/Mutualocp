@@ -4,14 +4,37 @@
 .institucional-img {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 5px;
   width: 100%;
+  margin-bottom: 50px;
 }
 
-main {
-  background-color: #F3F3FC;
+main .tarjeta {
+  flex: 1;
+  padding: 10px;
+  margin: 10px;
+  background-color: #e4007c;
+  color: #F3F3FC;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  height: auto;
+  min-height: 200px;
+}
+main .tarjeta .tarjeta p:first-child {
+  margin: 0;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-align: left;
+  margin-bottom: 10px;
+}
+main .tarjeta .tarjeta p:not(:first-child) {
+  margin: 0;
+  color: #e4007c;
+  text-align: left;
 }
 
 /* estilos html */
@@ -271,15 +294,18 @@ main section img {
   header nav ul a {
     font-size: 1.5rem;
   }
+  main .tarjeta {
+    flex: auto;
+    justify-content: flex-start;
+    height: auto;
+    padding-right: 15px;
+    padding-left: 5px;
+  }
   main .grid-container {
     margin-bottom: 120px;
   }
   main .grid-containerdos {
     margin-bottom: 100px;
-  }
-  main .content {
-    margin-bottom: 40px;
-    margin-top: 10px;
   }
   main .senora {
     margin-top: -360px;
