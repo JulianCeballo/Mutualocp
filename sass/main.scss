@@ -19,7 +19,7 @@ body {
     font-family: "Nunito", sans-serif;
     color:$color-secundario;
     background-color: $color-primario;
-      
+    
    }
 
 
@@ -41,7 +41,6 @@ body {
 
      }
        
-
    
 //nesting
 
@@ -51,13 +50,11 @@ header {
     text-align: center;
        
 
-
     nav {
         display: flex;
         justify-content: center;
-                    
+                   
        
-
         ul {   
             
             display: flex;
@@ -76,8 +73,7 @@ header {
 
                 a   {
                     text-decoration: none;
-                        /* Estilo para cambiar el color de la tipografía del navbar */
-                                                                             
+                                                                                                    
                      }
                     
           
@@ -89,8 +85,7 @@ header {
         
         @include medidas ( 100%,170px );
         object-fit: cover; 
-        
-                          
+                               
                     
                 }
                              
@@ -130,26 +125,24 @@ header {
     color: $color-terciario; 
 }
 
-/* Cambiar el color del enlace "Inicio" */
+/* color "Inicio" */
 .navbar-brand {
-    color: $color-secundario !important; /* Reemplaza #ff5733 con el color que desees */
+    color: $color-secundario !important; 
 }
 
-/* Cambiar el color al pasar el mouse por "Inicio" */
+/* Cambiar el color */
 .navbar-brand:hover {
-    color: $color-terciario!important; /* Reemplaza #ff4500 con otro color si deseas */
+    color: $color-terciario!important; 
 }
 
-
-
-                
+               
               
 /* Media query - Mobile */
 
 @media only screen and (max-width: 500px) {
     
 
-    header{
+    header {
         flex-direction: column;
         nav{
             width: 100%;
@@ -166,8 +159,40 @@ header {
         
     }
      
-        
-}
+       
+    main { 
+        .grid-container {
+
+            margin-bottom: 120px; 
+
+        } 
+
+            .grid-containerdos {
+            margin-bottom: 100px; 
+             }
+
+            .content {
+            margin-bottom: 40px;
+            margin-top: 10px;
+
+            }
+
+            .senora {
+             margin-top: -360px;
+
+            }
+
+            .textoservicio {
+                
+                margin-top: 5px;
+                margin-bottom: 45px;
+            }
+
+        }
+    }
+  
+
+
 
 
 

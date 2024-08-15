@@ -8,30 +8,42 @@ main {
     display: flex;
     justify-content: center;
     align-items: flex-start;  
-    padding-top: 20px;         
+    padding-top: 20px; 
+    
+        .textodeturnos {
+            color:$color-secundario;
+            margin: auto;
+            margin-left: 20px;
+            margin-right: 20px;
+           
+            }
+         .textodeturnos {
+            color:$color-secundario;
+             margin: auto;
+             margin-left: 5px;
+             margin-right: 10px;
+             margin-bottom: 10px;
+            }  
+         .textodeturnos:hover  {
+             background-color:$color-terciario;
+            } 
+            
+            .tur {
+  
+                display: flex;
+                justify-content: center; 
+                align-items: center; 
+                margin-left: 30px;
+            
+            }
+
+
 }
             
 
 
-.textodeturnos {
-    color:$color-secundario;
-     margin: auto;
-     margin-left: 10px;
-     margin-right: 10px;
-    
-}
 
-.textodeturnos:hover  {
-    background-color:$color-terciario;
-}        
 
-.tur {
-  
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-    margin-left: 30px;
 
-}
 
 

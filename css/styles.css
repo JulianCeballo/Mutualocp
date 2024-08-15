@@ -15,21 +15,20 @@ main {
 }
 
 /* estilos html */
-.content {
+main .content {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: left;
 }
-
-.senora {
+main .senora {
   margin-right: 15px;
 }
-
-.textoservicio {
+main .textoservicio {
   max-width: 700px;
   color: #e4007c;
   margin-right: 10px;
+  margin-top: 50px;
 }
 
 /* Estilos de html */
@@ -39,19 +38,23 @@ main {
   align-items: flex-start;
   padding-top: 20px;
 }
-
-.textodeturnos {
+main .textodeturnos {
   color: #e4007c;
   margin: auto;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
-
-.textodeturnos:hover {
+main .textodeturnos {
+  color: #e4007c;
+  margin: auto;
+  margin-left: 5px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+main .textodeturnos:hover {
   background-color: #1c0d02;
 }
-
-.tur {
+main .tur {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -63,7 +66,12 @@ main {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-template-rows: auto;
-  gap: 0px;
+  gap: 10px;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+.grid-containerdos main {
+  margin-bottom: 20px;
 }
 
 .grid-containerdos .item-g {
@@ -78,6 +86,14 @@ main {
 .grid-containerdos img {
   width: 100%;
   height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.maquinas {
+  margin-right: 10px;
+  margin-left: 10px;
+  color: #e4007c;
 }
 
 /* estilos de html con grid prestadores*/
@@ -100,11 +116,15 @@ main {
 .grid-container .item-grid img {
   max-width: 100%;
   height: auto;
+  object-fit: cover;
+  border-radius: 8px;
 }
 
 .hospitales {
   color: #e4007c;
   text-align: justify;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 /* estilos footer*/
@@ -190,7 +210,6 @@ header nav ul li {
 }
 header nav ul li a {
   text-decoration: none;
-  /* Estilo para cambiar el color de la tipografía del navbar */
 }
 header .carousel-img {
   width: 100%;
@@ -226,14 +245,14 @@ main section img {
   color: #1c0d02;
 }
 
-/* Cambiar el color del enlace "Inicio" */
+/* color "Inicio" */
 .navbar-brand {
-  color: #e4007c !important; /* Reemplaza #ff5733 con el color que desees */
+  color: #e4007c !important;
 }
 
-/* Cambiar el color al pasar el mouse por "Inicio" */
+/* Cambiar el color */
 .navbar-brand:hover {
-  color: #1c0d02 !important; /* Reemplaza #ff4500 con otro color si deseas */
+  color: #1c0d02 !important;
 }
 
 /* Media query - Mobile */
@@ -251,6 +270,23 @@ main section img {
   }
   header nav ul a {
     font-size: 1.5rem;
+  }
+  main .grid-container {
+    margin-bottom: 120px;
+  }
+  main .grid-containerdos {
+    margin-bottom: 100px;
+  }
+  main .content {
+    margin-bottom: 40px;
+    margin-top: 10px;
+  }
+  main .senora {
+    margin-top: -360px;
+  }
+  main .textoservicio {
+    margin-top: 5px;
+    margin-bottom: 45px;
   }
 }
 /*Media query - Desktop*/

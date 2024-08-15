@@ -3,24 +3,35 @@
 
 @import "../utilidades/variables";
 
-.content {
+
+
+main {
+     .content {
     display: flex;
     justify-content: center; 
     align-items: center; 
     text-align: left; 
-
+ 
     
-
 }
 
-.senora {
+    .senora {
     margin-right: 15px; 
     
+   
+    }
 
-}
-
-.textoservicio {
+    .textoservicio {
     max-width: 700px;
     color: $color-secundario;
     margin-right: 10px;
+    margin-top: 50px;
 }
+   
+
+}
+
+
+
+
+
