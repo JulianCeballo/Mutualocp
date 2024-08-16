@@ -1,0 +1,91 @@
+
+
+
+/* Media query - Mobile */
+
+
+@media only screen and (max-width: 500px) {
+    
+
+    header {
+        flex-direction: column;
+        nav{
+            width: 100%;
+            ul{
+                flex-direction: column;
+                align-items: center;
+                margin: 0 10px;
+                a{
+                    font-size: 1.5rem;
+                    
+                }
+            }
+        }
+        
+    }
+            
+    main { 
+       
+            .institucional-img {
+                flex-basis: 100%; 
+                margin: 10px 0; 
+                min-height: auto; 
+              }
+            
+          
+            .tarjeta p:first-child {
+              font-weight: bold;
+              font-size: 1.2rem;
+              margin-bottom: 10px;
+              text-align: left;
+            }
+          
+            .tarjeta p:not(:first-child) {
+              margin: 0;
+              color: $color-secundario;
+              text-align: left;
+            }
+          
+
+        }
+       
+     
+            .grid-container {
+                margin-bottom: 120px; 
+             } 
+            .grid-containerdos {
+                margin-bottom: 100px; 
+            
+             }
+
+            .content{ 
+                display:flex;
+                margin-top: -45px;
+                align-items: flex-start;
+
+            }
+
+            .senora {
+                margin-top:50px;
+
+            }
+
+            .textoservicio {
+                margin-top: 10px;
+                margin-bottom: 45px;
+                color: rgb(241, 241, 241);
+            
+            }
+                       
+            
+        }
+
+
+
+       /*Media query - Desktop*/
+ @media only screen and ( min-width: 961px) {
+   
+    body {
+        background-color:#F3F3FC ;}
+            
+     }

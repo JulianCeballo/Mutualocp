@@ -9,15 +9,16 @@
     padding: 5px;
     width: 100%;
     margin-bottom: 50px;
+    align-items: normal;
   }
   
   main {
     .tarjeta {
-      flex: 1;
+      flex:1; 
       padding: 10px;
-      margin: 10px;
-      background-color: $color-secundario;
-      color: $color-primario;
+      margin: 5px;
+      background-color: $color-terciario;
+      color: $color-secundario;
       border-radius: 8px;
       display: flex;
       flex-direction: column;
@@ -29,7 +30,6 @@
     .tarjeta p:first-child {
       margin: 0;
       font-weight: bold;
-      font-size: 1.2rem;
       text-align: left;
       margin-bottom: 10px; 
     }

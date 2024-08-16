@@ -13,6 +13,7 @@
 @import"utilidades/footer";
 @import"utilidades/variables";
 @import"utilidades/mixin";
+@import"./utilidades/queries";
 
 
 body { 
@@ -102,16 +103,12 @@ header {
 
 
                     section {
-                        justify-content: margin-bottom 20px;
-                        img {
-                          
-                            max-width: 90%;
-                            height: auto;
-                         
-                            
+                        justify-content: center;
+                        height: auto;
+                                                     
                         }
                     }
-                }   
+                  
 
 
 /* Estilo para cambiar el color de la tipografía del navbar */
@@ -138,75 +135,8 @@ header {
 
                
               
-/* Media query - Mobile */
-
-@media only screen and (max-width: 500px) {
-    
-
-    header {
-        flex-direction: column;
-        nav{
-            width: 100%;
-            ul{
-                flex-direction: column;
-                align-items: center;
-                margin: 0 10px;
-                a{
-                    font-size: 1.5rem;
-                    
-                }
-            }
-        }
-        
-    }
-            
-    main { 
-        .tarjeta {
-            flex: auto;
-            justify-content: flex-start;
-            height: auto;
-            padding-right: 15px;
-            padding-left:5px;
-        }
 
      
-        .grid-container {
-
-            margin-bottom: 120px; 
-
-        } 
-
-            .grid-containerdos {
-            margin-bottom: 100px; 
-             }
-
-
-            .senora {
-             margin-top: -360px;
-
-            }
-
-            .textoservicio {
-                
-                margin-top: 5px;
-                margin-bottom: 45px;
-            }
-           
-
-            
-            
-        }
-    }
-  
-    
-
- /*Media query - Desktop*/
- @media only screen and ( min-width: 961px) {
-   
-    body {
-        background-color:#F3F3FC ;}
-            
-     }
 
         
                     

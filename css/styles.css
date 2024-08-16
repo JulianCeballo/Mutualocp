@@ -8,14 +8,15 @@
   padding: 5px;
   width: 100%;
   margin-bottom: 50px;
+  align-items: normal;
 }
 
 main .tarjeta {
   flex: 1;
   padding: 10px;
-  margin: 10px;
-  background-color: #e4007c;
-  color: #F3F3FC;
+  margin: 5px;
+  background-color: #ffe5bd;
+  color: #001b3b;
   border-radius: 8px;
   display: flex;
   flex-direction: column;
@@ -27,29 +28,29 @@ main .tarjeta {
 main .tarjeta .tarjeta p:first-child {
   margin: 0;
   font-weight: bold;
-  font-size: 1.2rem;
   text-align: left;
   margin-bottom: 10px;
 }
 main .tarjeta .tarjeta p:not(:first-child) {
   margin: 0;
-  color: #e4007c;
+  color: #001b3b;
   text-align: left;
 }
 
 /* estilos html */
 main .content {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
   text-align: left;
+  margin-bottom: 50px;
 }
 main .senora {
   margin-right: 15px;
 }
 main .textoservicio {
-  max-width: 700px;
-  color: #e4007c;
+  max-width: 600px;
+  color: #001b3b;
   margin-right: 10px;
   margin-top: 50px;
 }
@@ -62,20 +63,20 @@ main {
   padding-top: 20px;
 }
 main .textodeturnos {
-  color: #e4007c;
+  color: #001b3b;
   margin: auto;
   margin-left: 20px;
   margin-right: 20px;
 }
 main .textodeturnos {
-  color: #e4007c;
+  color: #001b3b;
   margin: auto;
   margin-left: 5px;
   margin-right: 10px;
   margin-bottom: 10px;
 }
 main .textodeturnos:hover {
-  background-color: #1c0d02;
+  background-color: #ffe5bd;
 }
 main .tur {
   display: flex;
@@ -116,7 +117,7 @@ main .tur {
 .maquinas {
   margin-right: 10px;
   margin-left: 10px;
-  color: #e4007c;
+  color: #001b3b;
 }
 
 /* estilos de html con grid prestadores*/
@@ -144,7 +145,7 @@ main .tur {
 }
 
 .hospitales {
-  color: #e4007c;
+  color: #001b3b;
   text-align: justify;
   margin-right: 10px;
   margin-left: 10px;
@@ -152,11 +153,11 @@ main .tur {
 
 /* estilos footer*/
 footer {
-  color: #e4007c;
+  color: #001b3b;
   position: fixed;
   bottom: 0;
   left: 0;
-  background-color: #F3F3FC;
+  background-color: #ffe5bd;
   padding: 10px;
   width: 100%;
   display: flex;
@@ -183,16 +184,74 @@ footer p {
   margin: 0;
 }
 
+/* Media query - Mobile */
+@media only screen and (max-width: 500px) {
+  header {
+    flex-direction: column;
+  }
+  header nav {
+    width: 100%;
+  }
+  header nav ul {
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10px;
+  }
+  header nav ul a {
+    font-size: 1.5rem;
+  }
+  main .institucional-img {
+    flex-basis: 100%;
+    margin: 10px 0;
+    min-height: auto;
+  }
+  main .tarjeta p:first-child {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+  main .tarjeta p:not(:first-child) {
+    margin: 0;
+    color: #001b3b;
+    text-align: left;
+  }
+  .grid-container {
+    margin-bottom: 120px;
+  }
+  .grid-containerdos {
+    margin-bottom: 100px;
+  }
+  .content {
+    display: flex;
+    margin-top: -45px;
+    align-items: flex-start;
+  }
+  .senora {
+    margin-top: 50px;
+  }
+  .textoservicio {
+    margin-top: 10px;
+    margin-bottom: 45px;
+    color: rgb(241, 241, 241);
+  }
+}
+/*Media query - Desktop*/
+@media only screen and (min-width: 961px) {
+  body {
+    background-color: #F3F3FC;
+  }
+}
 body {
   font-family: "Nunito", sans-serif;
-  color: #e4007c;
-  background-color: #F3F3FC;
+  color: #001b3b;
+  background-color: #e2e2e2;
 }
 
 .mutual-info {
   width: 100%;
-  color: #F3F3FC;
-  background-color: #e4007c;
+  color: #e2e2e2;
+  background-color: #001b3b;
   font-size: 15px;
   text-align: right;
   padding: 2px;
@@ -208,7 +267,7 @@ body {
 }
 
 header {
-  background-color: #F3F3FC;
+  background-color: #e2e2e2;
   width: 100%;
   text-align: center;
 }
@@ -229,7 +288,7 @@ header nav ul li {
   margin-right: 20px;
   list-style-type: none;
   text-decoration: none;
-  color: #e4007c;
+  color: #001b3b;
 }
 header nav ul li a {
   text-decoration: none;
@@ -241,7 +300,7 @@ header .carousel-img {
 }
 
 main {
-  color: #F3F3FC;
+  color: #e2e2e2;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -249,77 +308,30 @@ main {
   width: 100%;
 }
 main section {
-  justify-content: margin-bottom 20px;
-}
-main section img {
-  max-width: 90%;
+  justify-content: center;
   height: auto;
 }
 
 /* Estilo para cambiar el color de la tipografía del navbar */
 .navbar-nav .nav-link {
-  color: #e4007c;
+  color: #001b3b;
 }
 
 /* Cambia el color  */
 .navbar-nav .nav-link:hover,
 .navbar-nav .nav-link:focus,
 .navbar-nav .nav-link.active {
-  color: #1c0d02;
+  color: #ffe5bd;
 }
 
 /* color "Inicio" */
 .navbar-brand {
-  color: #e4007c !important;
+  color: #001b3b !important;
 }
 
 /* Cambiar el color */
 .navbar-brand:hover {
-  color: #1c0d02 !important;
-}
-
-/* Media query - Mobile */
-@media only screen and (max-width: 500px) {
-  header {
-    flex-direction: column;
-  }
-  header nav {
-    width: 100%;
-  }
-  header nav ul {
-    flex-direction: column;
-    align-items: center;
-    margin: 0 10px;
-  }
-  header nav ul a {
-    font-size: 1.5rem;
-  }
-  main .tarjeta {
-    flex: auto;
-    justify-content: flex-start;
-    height: auto;
-    padding-right: 15px;
-    padding-left: 5px;
-  }
-  main .grid-container {
-    margin-bottom: 120px;
-  }
-  main .grid-containerdos {
-    margin-bottom: 100px;
-  }
-  main .senora {
-    margin-top: -360px;
-  }
-  main .textoservicio {
-    margin-top: 5px;
-    margin-bottom: 45px;
-  }
-}
-/*Media query - Desktop*/
-@media only screen and (min-width: 961px) {
-  body {
-    background-color: #F3F3FC;
-  }
+  color: #ffe5bd !important;
 }
 
 /*# sourceMappingURL=styles.css.map */
