@@ -2,59 +2,61 @@
 /* comentario en scss y css*/
 /* parcial , estilos de html */
 .institucional-img {
-  display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  padding: 5px;
+  padding: 30px;
   width: 100%;
   margin-bottom: 50px;
-  align-items: normal;
 }
-
-main .tarjeta {
+.institucional-img .tarjeta {
   flex: 1;
   padding: 10px;
   margin: 5px;
-  background-color: #ffe5bd;
-  color: #001b3b;
+  background-color: #f6f6f6;
+  color: #119B87;
   border-radius: 8px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   height: auto;
-  min-height: 200px;
+  min-height: 100px;
 }
-main .tarjeta .tarjeta p:first-child {
+.institucional-img .tarjeta p:first-child {
   margin: 0;
   font-weight: bold;
-  text-align: left;
+  text-align: center;
   margin-bottom: 10px;
 }
-main .tarjeta .tarjeta p:not(:first-child) {
-  margin: 0;
-  color: #001b3b;
+.institucional-img .tarjeta p:not(:first-child) {
+  margin: 15px;
+  color: #119B87;
   text-align: left;
 }
-
 /* estilos html */
 main .content {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
   text-align: left;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
 }
 main .senora {
-  margin-right: 15px;
+  margin-right: 10px;
+  object-fit: cover;
+  border-radius: 10px;
 }
 main .textoservicio {
   max-width: 600px;
-  color: #001b3b;
-  margin-right: 10px;
+  color: #119B87;
+  background-color: #ffffff;
+  margin-right: 20px;
+  margin-left: 5px;
   margin-top: 50px;
+  padding: 7px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  min-height: 50px;
+  border-radius: 10px;
 }
-
 /* Estilos de html */
 main {
   display: flex;
@@ -62,51 +64,49 @@ main {
   align-items: flex-start;
   padding-top: 20px;
 }
-main .textodeturnos {
-  color: #001b3b;
-  margin: auto;
-  margin-left: 20px;
-  margin-right: 20px;
+main a {
+  text-decoration: none;
 }
 main .textodeturnos {
-  color: #001b3b;
-  margin: auto;
-  margin-left: 5px;
+  color: #119B87;
+  padding: 15px;
+  margin-left: 10px;
   margin-right: 10px;
   margin-bottom: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  min-height: 50px;
+  border-radius: 10px;
 }
 main .textodeturnos:hover {
-  background-color: #ffe5bd;
+  background-color: #f6f6f6;
 }
 main .tur {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-left: 30px;
+  object-fit: cover;
+  border-radius: 20px;
+  height: 120px;
+  margin: auto;
 }
 
 /* estilos de html grid*/
 .grid-containerdos {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   grid-template-rows: auto;
   gap: 10px;
   padding: 15px;
-  margin-bottom: 20px;
-}
-.grid-containerdos main {
-  margin-bottom: 20px;
+  margin-bottom: 100px;
 }
 
 .grid-containerdos .item-g {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  padding: 5px;
-  max-width: 100%;
-  height: auto;
+  text-align: center;
 }
-
 .grid-containerdos img {
   width: 100%;
   height: auto;
@@ -114,10 +114,10 @@ main .tur {
   border-radius: 8px;
 }
 
-.maquinas {
-  margin-right: 10px;
-  margin-left: 10px;
-  color: #001b3b;
+.texto-imagen {
+  margin-top: 10px;
+  color: #119B87;
+  font-size: 1rem;
 }
 
 /* estilos de html con grid prestadores*/
@@ -126,14 +126,16 @@ main .tur {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-template-rows: auto;
-  gap: 5px;
+  gap: 3px;
   place-items: center;
+  margin-top: -10px;
+  margin-bottom: 100px;
 }
 
 .grid-container .item-grid {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   padding: 10px;
 }
 
@@ -145,19 +147,20 @@ main .tur {
 }
 
 .hospitales {
-  color: #001b3b;
+  color: #119B87;
   text-align: justify;
   margin-right: 10px;
   margin-left: 10px;
+  margin-top: -10px;
 }
 
 /* estilos footer*/
 footer {
-  color: #001b3b;
+  color: #f6f6f6;
   position: fixed;
   bottom: 0;
   left: 0;
-  background-color: #ffe5bd;
+  background-color: #119B87;
   padding: 10px;
   width: 100%;
   display: flex;
@@ -177,17 +180,26 @@ footer a .instagram {
   width: 60px;
   height: auto;
   position: absolute;
-  top: -60%;
-  left: 10px;
+  top: 10%;
+  right: 10px;
 }
 footer p {
   margin: 0;
+  text-align: start;
+  margin-right: 30px;
+  padding: 5px;
 }
 
 /* Media query - Mobile */
 @media only screen and (max-width: 500px) {
   header {
-    flex-direction: column;
+    flex-direction: row;
+  }
+  header .logotipo1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
   }
   header nav {
     width: 100%;
@@ -200,20 +212,23 @@ footer p {
   header nav ul a {
     font-size: 1.5rem;
   }
-  main .institucional-img {
-    flex-basis: 100%;
-    margin: 10px 0;
-    min-height: auto;
+  .institucional-img {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 5px;
+    margin-bottom: 120px;
+    align-items: normal;
   }
-  main .tarjeta p:first-child {
+  .tarjeta p:first-child {
     font-weight: bold;
     font-size: 1.2rem;
     margin-bottom: 10px;
     text-align: left;
   }
-  main .tarjeta p:not(:first-child) {
+  .tarjeta p:not(:first-child) {
     margin: 0;
-    color: #001b3b;
+    color: #119B87;
     text-align: left;
   }
   .grid-container {
@@ -236,22 +251,70 @@ footer p {
     color: rgb(241, 241, 241);
   }
 }
-/*Media query - Desktop*/
-@media only screen and (min-width: 961px) {
-  body {
-    background-color: #F3F3FC;
+@media screen and (min-width: 768px) {
+  .logotipo1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
+@-webkit-keyframes slide-fwd-center {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+    opacity: 1;
+  }
+}
+@keyframes slide-fwd-center {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+    opacity: 1;
+  }
+}
+.slide-fwd-center, .institucional-img .tarjeta:hover, main .textoservicio:hover, main .textodeturnos:hover:hover, .grid-containerdos .item-g:hover {
+  -webkit-animation: slide-fwd-center 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-fwd-center 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+main h1 {
+  color: #119B87;
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+}
+main .formuuno {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #119B87;
+  margin-right: 10px;
+}
+main select {
+  display: block;
+  width: 100%;
+}
+
 body {
   font-family: "Nunito", sans-serif;
-  color: #001b3b;
-  background-color: #e2e2e2;
+  color: #119B87;
+  background-color: #f6f6f6;
 }
 
 .mutual-info {
   width: 100%;
-  color: #e2e2e2;
-  background-color: #001b3b;
+  color: #f6f6f6;
+  background-color: #119B87;
   font-size: 15px;
   text-align: right;
   padding: 2px;
@@ -259,15 +322,15 @@ body {
 
 /*isologotipo*/
 .logotipo1 img {
-  width: 100px;
+  width: 130px;
   height: auto;
   position: absolute;
-  top: -15px;
-  left: -20px;
+  top: 0px;
+  left: 150px;
 }
 
 header {
-  background-color: #e2e2e2;
+  background-color: #f6f6f6;
   width: 100%;
   text-align: center;
 }
@@ -288,7 +351,7 @@ header nav ul li {
   margin-right: 20px;
   list-style-type: none;
   text-decoration: none;
-  color: #001b3b;
+  color: #119B87;
 }
 header nav ul li a {
   text-decoration: none;
@@ -300,7 +363,7 @@ header .carousel-img {
 }
 
 main {
-  color: #e2e2e2;
+  color: #f6f6f6;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -314,24 +377,24 @@ main section {
 
 /* Estilo para cambiar el color de la tipografía del navbar */
 .navbar-nav .nav-link {
-  color: #001b3b;
+  color: #119B87;
 }
 
 /* Cambia el color  */
 .navbar-nav .nav-link:hover,
 .navbar-nav .nav-link:focus,
 .navbar-nav .nav-link.active {
-  color: #ffe5bd;
+  color: #c5c5dd;
 }
 
 /* color "Inicio" */
 .navbar-brand {
-  color: #001b3b !important;
+  color: #119B87 !important;
 }
 
 /* Cambiar el color */
 .navbar-brand:hover {
-  color: #ffe5bd !important;
+  color: #0D3E37 !important;
 }
 
 /*# sourceMappingURL=styles.css.map */

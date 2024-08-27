@@ -1,0 +1,29 @@
+
+@import "../utilidades/variables";
+
+
+main {
+    h1 { color: $color-secundario;
+        display: flex;
+        justify-content: flex-end;
+        padding: 10px;
+    }    
+.formuuno {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: $color-secundario;
+        margin-right: 10px;
+  }
+      
+    select {
+        display: block;
+        width: 100%;
+}
+ 
+ }
+  
+
+
+
+

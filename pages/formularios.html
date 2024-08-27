@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- LInk de boostrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+  rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+     <!-- Link de mi Css-->
+  <link rel="stylesheet" href="../css/styles.css">
+  
+
+  <!--CSS animaciones-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+<body>
+
+     <!--header ( Cabezera de la pagina) -->
+     <header>
+        <p class="mutual-info">mutual@mutualocp.org.ar 08004446888 </p>
+        
+         <div class="logotipo1">
+       
+            <img src="../img/logiago.png" alt="logotipo">
+        </div>
+        
+        <nav class="navbar navbar-expand-lg navbar-light ">
+         
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">Inicio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-active"  href="../index.html">Institucional</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-active" href="./servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-active" href="./turnos.html">Turnos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-active" href="./novedades.html">Novedades</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-active" href="./prestadores.html">Prestadores</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+          
+
+          <!-- Carrusel -->
+           
+          <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner carousel-img ">
+
+            <div class="carousel-item active">
+            <img src="../img/familia2.png" class= "d-block w-100 carousel-img "   alt="muchachos">
+            </div>
+            
+            <div class="carousel-item">
+         
+            <img src="../img/doctor.png" class= "d-block w-100 carousel-img " alt= "imagendoctormutual">
+            </div>
+            
+            <div class="carousel-item">
+            <img src="../img/chicamorocha.png" class="d-block w-100 carousel-img " alt="imagendeequipos">
+            </div>
+           </div>
+           
+           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+             <span class="visually-hidden">Previous</span>
+          </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+          
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+           <span class="visually-hidden">Next</span>
+            </button>
+             </div>
+  
+           
+  
+    </header>
+
+     
+    <!-- Fin del Header-->
+
+    <main>
+       
+        <h1><strong> Reserva tu turno </strong></h1>  
+    
+        <form class="formuuno">
+            <div>
+                <input type="text" name="Nombre" placeholder="Escriba aquí su nombre"> 
+            </div>
+    
+            <div> 
+                <input type="text" name="Apellido" placeholder="Su apellido">
+            </div>
+    
+            <div>
+                <input type="email" name="correo_electronico" placeholder="Su correo electrónico">
+            </div> 
+    
+            <div>
+                <input type="number" name="Edad" placeholder="Su edad">
+            </div>
+    
+            <div>
+                <label for="doctores">Selecciona un doctor:</label>
+                <select name="doctores" id="doctores">
+                    <option value=""> <strong> Doctores</strong> </option>
+                    <option value="doctor1">Dr. Juan Pérez</option>
+                    <option value="doctor2">Dra. María López</option>
+                    <option value="doctor3">Dr. Carlos Fernández</option>
+                    <!-- Agrega más doctores aquí -->
+                </select>
+            </div>
+          
+            <div>
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+    </main>
+
+
+
+      <!-- Footer de la web , enlase del whatasaap -->
+         
+      <footer>
+        <a href="https://wa.me/message/6YR54S4GEATPF1">
+            <img class="whata" src="../img/whatsapp.png" alt="numero de whatasaap">
+        </a>
+
+        <a href=" https://www.instagram.com/detodoinformatica/"> 
+            <img class="instagram" src="../img/insta.png" alt="logoinstagram">
+          </a>
+        <p>Atencion al Asociado Lunes a Viernes de 8:00 a 20:00 hs.</p>
+    </footer>
+
+
+
+
+
+    <!--Link Boostrap -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+  
+    
+</body>
+</html>

@@ -14,6 +14,9 @@
 @import"utilidades/variables";
 @import"utilidades/mixin";
 @import"./utilidades/queries";
+@import"./utilidades/extend";
+@import "./page/formularios";
+
 
 
 body { 
@@ -35,10 +38,11 @@ body {
   
   /*isologotipo*/
 .logotipo1 img {
-    @include medidas ( 100px,auto);
+    @include medidas ( 130px,auto);
     position: absolute;
-    top: -15px; 
-    left: -20px; 
+    top: 0px; 
+    left: 150px;
+   
 
      }
        
@@ -70,8 +74,8 @@ header {
                 list-style-type: none;
                 text-decoration: none;
                 color: $color-secundario;
+            
                 
-
                 a   {
                     text-decoration: none;
                                                                                                     
@@ -130,7 +134,7 @@ header {
 
 /* Cambiar el color */
 .navbar-brand:hover {
-    color: $color-terciario!important; 
+    color: $color-quinto!important; 
 }
 
                

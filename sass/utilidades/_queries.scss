@@ -1,14 +1,24 @@
 
 
-
 /* Media query - Mobile */
 
 
 @media only screen and (max-width: 500px) {
     
-
+    
+    
     header {
-        flex-direction: column;
+       
+        flex-direction: row;
+         .logotipo1 { 
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+            margin-bottom: 20px
+            
+              
+
+          }
         nav{
             width: 100%;
             ul{
@@ -24,12 +34,18 @@
         
     }
             
-    main { 
-       
+            // Institucional
+         
             .institucional-img {
-                flex-basis: 100%; 
-                margin: 10px 0; 
-                min-height: auto; 
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+                padding: 5px;
+                margin-bottom: 120px;
+                align-items: normal;
+               
+                      
+                 
               }
             
           
@@ -46,11 +62,10 @@
               text-align: left;
             }
           
-
-        }
+            //novedades
+        
        
-     
-            .grid-container {
+           .grid-container {
                 margin-bottom: 120px; 
              } 
             .grid-containerdos {
@@ -76,16 +91,15 @@
                 color: rgb(241, 241, 241);
             
             }
+
+        }
                        
             
+        @media screen and (min-width: 768px) {
+
+            .logotipo1 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
         }
-
-
-
-       /*Media query - Desktop*/
- @media only screen and ( min-width: 961px) {
-   
-    body {
-        background-color:#F3F3FC ;}
-            
-     }

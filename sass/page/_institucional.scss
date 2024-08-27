@@ -1,43 +1,57 @@
 /* parcial , estilos de html */
 
 @import "../utilidades/variables";
+
+     
    
+
+
 .institucional-img {
+
+  flex-direction: row;
+  padding: 30px;
+  width: 100%;
+  margin-bottom: 50px;
+ 
+
+  .tarjeta {
+    flex: 1;
+    padding: 10px;
+    margin: 5px;
+    background-color: $color-primario;
+    color: $color-secundario;
+    border-radius: 8px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 5px;
-    width: 100%;
-    margin-bottom: 50px;
-    align-items: normal;
-  }
-  
-  main {
-    .tarjeta {
-      flex:1; 
-      padding: 10px;
-      margin: 5px;
-      background-color: $color-terciario;
-      color: $color-secundario;
-      border-radius: 8px;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start; 
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      height: auto;
-      min-height: 200px;
-  
-    .tarjeta p:first-child {
+    flex-direction: column;
+    justify-content: flex-start;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: auto;
+    min-height: 100px;
+
+    p:first-child {
       margin: 0;
       font-weight: bold;
-      text-align: left;
-      margin-bottom: 10px; 
+      text-align: center;
+      margin-bottom: 10px;
     }
-  
-    .tarjeta p:not(:first-child) {
-      margin: 0;
+
+    p:not(:first-child) {
+      margin: 15px;
       color: $color-secundario;
       text-align: left;
     }
+
+    
+    &:hover {
+      @extend .slide-fwd-center;
+    }
+
+    
   }
 }
+
+
+
+ 
+
+

@@ -9,32 +9,39 @@ main {
     justify-content: center;
     align-items: flex-start;  
     padding-top: 20px; 
-    
-        .textodeturnos {
-            color:$color-secundario;
-            margin: auto;
-            margin-left: 20px;
-            margin-right: 20px;
-           
-            }
+        a { text-decoration: none;}
+      
          .textodeturnos {
             color:$color-secundario;
-             margin: auto;
-             margin-left: 5px;
+             padding: 15px;
+             margin-left: 10px;
              margin-right: 10px;
              margin-bottom: 10px;
+             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+             min-height: 50px;
+             border-radius: 10px;
+            
             }  
          .textodeturnos:hover  {
-             background-color:$color-terciario;
+             background-color: $color-primario;
+             &:hover {
+              @extend .slide-fwd-center;
+                  }
             } 
             
             .tur {
-  
+                
                 display: flex;
                 justify-content: center; 
                 align-items: center; 
                 margin-left: 30px;
-            
+                object-fit: cover;
+                border-radius: 20px;
+                height: 120px;
+                margin:auto;
+                
+              
+                            
             }
 
 
