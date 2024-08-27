@@ -48,7 +48,7 @@ main .senora {
 main .textoservicio {
   max-width: 600px;
   color: #119B87;
-  background-color: #ffffff;
+  background-color: #f6f6f6;
   margin-right: 20px;
   margin-left: 5px;
   margin-top: 50px;
@@ -231,12 +231,6 @@ footer p {
     color: #119B87;
     text-align: left;
   }
-  .grid-container {
-    margin-bottom: 120px;
-  }
-  .grid-containerdos {
-    margin-bottom: 100px;
-  }
   .content {
     display: flex;
     margin-top: -45px;
@@ -250,12 +244,45 @@ footer p {
     margin-bottom: 45px;
     color: rgb(241, 241, 241);
   }
+  .grid-container {
+    margin-bottom: 120px;
+  }
+  .grid-containerdos {
+    margin-bottom: 100px;
+  }
 }
 @media screen and (min-width: 768px) {
+  header {
+    flex-direction: row;
+  }
+  header .logotipo1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  header nav {
+    width: 100%;
+  }
+  header nav ul {
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10px;
+  }
+  header nav ul a {
+    font-size: 1.5rem;
+  }
   .logotipo1 {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .formuuno {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: #119B87;
   }
 }
 @-webkit-keyframes slide-fwd-center {

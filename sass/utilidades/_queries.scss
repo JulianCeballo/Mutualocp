@@ -1,12 +1,9 @@
 
-
 /* Media query - Mobile */
 
 
 @media only screen and (max-width: 500px) {
-    
-    
-    
+            
     header {
        
         flex-direction: row;
@@ -15,8 +12,7 @@
             justify-content: center;
             align-items: center; 
             margin-bottom: 20px
-            
-              
+                     
 
           }
         nav{
@@ -33,9 +29,9 @@
         }
         
     }
-            
+          
             // Institucional
-         
+        
             .institucional-img {
                 display: flex;
                 justify-content: space-between;
@@ -43,12 +39,10 @@
                 padding: 5px;
                 margin-bottom: 120px;
                 align-items: normal;
-               
-                      
-                 
+                           
+              
               }
-            
-          
+                      
             .tarjeta p:first-child {
               font-weight: bold;
               font-size: 1.2rem;
@@ -61,25 +55,15 @@
               color: $color-secundario;
               text-align: left;
             }
-          
-            //novedades
-        
-       
-           .grid-container {
-                margin-bottom: 120px; 
-             } 
-            .grid-containerdos {
-                margin-bottom: 100px; 
-            
-             }
-
+                                  
+         
+             // servicios
             .content{ 
                 display:flex;
                 margin-top: -45px;
                 align-items: flex-start;
 
             }
-
             .senora {
                 margin-top:50px;
 
@@ -92,14 +76,69 @@
             
             }
 
+              //novedades
+              
+           .grid-container {
+            margin-bottom: 120px; 
+             } 
+             .grid-containerdos {
+            margin-bottom: 100px; 
+        
+              }
+
+
+
         }
                        
-            
+     
+
         @media screen and (min-width: 768px) {
+
+            header {
+       
+                flex-direction: row;
+                 .logotipo1 { 
+                    display: flex;
+                    justify-content: center;
+                    align-items: center; 
+                    margin-bottom: 20px
+                            
+        
+                  }
+                nav{
+                    width: 100%;
+                    ul{
+                        flex-direction: column;
+                        align-items: center;
+                        margin: 0 10px;
+                        a{
+                            font-size: 1.5rem;
+                            
+                        }
+                    }
+                }
+                
+            }
+
 
             .logotipo1 {
                 display: flex;
                 justify-content: center;
                 align-items: center;
             }
-        }
+
+            .formuuno {
+                
+                    
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                color: $color-secundario;
+              
+              }
+            }
+
+
+
+        

@@ -9,10 +9,9 @@
     gap: 10px; 
     padding: 15px;
     margin-bottom: 100px;
-        
+     
     
 }
-
 
 .grid-containerdos .item-g {
     display: flex;
@@ -22,8 +21,7 @@
         &:hover {
         @extend .slide-fwd-center;
          }
-  
- 
+   
 }
 
 .grid-containerdos img {
@@ -34,11 +32,10 @@
 
 }
 
-
 .texto-imagen {
     margin-top: 10px;
-    color: $color-secundario; // Utiliza tu variable de color para el texto
-    font-size: 1rem; // Tamaño de fuente del texto debajo de la imagen
+    color: $color-secundario; 
+    font-size: 1rem; 
 }   
    
 
