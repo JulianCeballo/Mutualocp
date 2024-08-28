@@ -20,7 +20,7 @@
 
 
 body { 
-    font-family: "Nunito", sans-serif;
+    font-family:"Nunito", sans-serif;
     color:$color-secundario;
     background-color: $color-primario;
     
@@ -38,10 +38,10 @@ body {
   
   /*isologotipo*/
 .logotipo1 img {
-    @include medidas ( 130px,auto);
+    @include medidas ( 8em,auto);
     position: absolute;
-    top: 0px; 
-    left: 150px;
+    top: 5px; 
+    left: 120px;
    
 
      }
